@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yarin Keren | Web Developer</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://imgtr.ee/images/2023/06/13/QIUE4.png"
+      type="image/icon type"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-700" style="font-family: 'Raleway', sans-serif">
+    <div class="mb-20 pb-4">
+      <nav
+        class="bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-600"
+      >
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1 font-mono"
+        >
+          <a href="https://www.yarinkeren.com/" class="flex items-center">
+            <img
+              class="h-12 mr-3"
+              src="https://imgtr.ee/images/2023/06/13/QIUE4.png"
+              alt=""
+            />
+          </a>
+          <div class="flex md:order-2">
+            <button
+              data-collapse-toggle="navbar-sticky"
+              id="nav-button"
+              type="button"
+              class="inline-flex items-center p-2 text-sm text-gray-400 rounded-lg md:hidden hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-600 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
+              aria-controls="navbar-sticky"
+              aria-expanded="false"
+            >
+              <svg
+                class="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div
+            class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+            id="navbar-sticky"
+          >
+            <ul
+              class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-700 rounded-lg bg-gray-800 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-gray-900"
+            >
+              <li>
+                <a
+                  href="#projectSection"
+                  class="text-lg block py-2 pl-3 pr-4 text-white rounded hover:bg-violet-600 md:hover:bg-transparent md:hover:text-violet-500 md:p-0"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#aboutSection"
+                  class="text-lg block py-2 pl-3 pr-4 text-white rounded hover:bg-violet-600 md:hover:bg-transparent md:hover:text-violet-500 md:p-0"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contactSection"
+                  class="text-lg block py-2 pl-3 pr-4 text-white rounded hover:bg-violet-600 md:hover:bg-transparent md:hover:text-violet-500 md:p-0"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Side Menu -->
+    <div class="hidden lg:flex fixed flex-col top-[30%] left-0">
+      <ul>
+        <li
+          class="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-blue-600"
+        >
+          <a
+            target="blank"
+            class="flex justify-between items-center w-full text-gray-300"
+            href="https://www.linkedin.com/in/yarinkeren/"
+            >Linkedin
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 448 512"
+              height="30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+              ></path></svg
+          ></a>
+        </li>
+        <li
+          class="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-black"
+        >
+          <a
+            target="blank"
+            class="flex justify-between items-center w-full text-gray-300"
+            href="https://github.com/YarinKeren"
+            >Github
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 496 512"
+              height="30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+              ></path></svg
+          ></a>
+        </li>
+        <li
+          class="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[0px] duration-300 bg-[#6fc2b0]"
+        >
+          <a
+            target="blank"
+            class="flex justify-between items-center w-full text-gray-300"
+            href="mailto:jarin4378@gmail.com"
+            >Email
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+              height="30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              ></path></svg
+          ></a>
+        </li>
+      </ul>
+    </div>
+    <!-- Content
+    ....
+    .... -->
+    <div class="headers md:ml-40 md:border-l-2 border-violet-500 px-7">
+      <h1 class="text-4xl sm:text-7xl font-bold text-[#ccd6f6] pt-3">
+        Yarin Keren
+      </h1>
+      <h2 class="text-2xl sm:text-4xl font-bold text-violet-500">
+        Web Developer.
+      </h2>
+      <h4 class="text-[#8892b0] py-4 max-w-[700px]">
+        I specialize in web development and styling,<br />creating functional
+        and visually appealing websites.
+      </h4>
+    </div>
+    <h3
+      class="mt-5 md:ml-40 md:pl-7 px-7 text-2xl sm:text-4xl text-[#ccd6f6] pt-10 underline underline-offset-5 decoration-violet-500"
+      id="projectSection"
+    >
+      Projects
+    </h3>
+    <div
+      class="flex flex-wrap justify-center items-center md:space-x-4 md:mx-40 md:border-l-2 border-violet-500 p-7 mb-5"
+    >
+      <div
+        class="my-3 lg:flex-1 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] flex-shrink-0 flex-grow-0 w-full"
+      >
+        <div
+          class="relative overflow-hidden bg-cover bg-no-repeat"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+        >
+          <img
+            class="rounded-t-lg h-48 object-cover w-full"
+            src="https://imgtr.ee/images/2023/06/13/QsZy2.jpg"
+            alt=""
+          />
+          <a href="#!">
+            <div
+              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+            ></div>
+          </a>
+        </div>
+        <div class="p-6">
+          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">
+            Matrices Calculator
+          </h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            C (Pure)
+          </p>
+          <button
+            type="button"
+            id="cardBtn"
+            name="matrix"
+            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            Code
+          </button>
+        </div>
+      </div>
+      <div
+        class="my-3 lg:flex-1 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] flex-shrink-0 flex-grow-0 w-full"
+      >
+        <div
+          class="relative overflow-hidden bg-cover bg-no-repeat"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+        >
+          <img
+            class="rounded-t-lg h-48 object-cover w-full"
+            src="https://imgtr.ee/images/2023/06/13/Qs4ys.jpg"
+            alt=""
+          />
+          <a href="#!">
+            <div
+              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+            ></div>
+          </a>
+        </div>
+        <div class="p-6">
+          <h5 class="mb-2 text-xl font-medium leading-tight text-neutral-800">
+            What to Watch ?!
+          </h5>
+          <p class="mb-4 text-base text-neutral-600">Javascript / Bootstrap</p>
+          <button
+            type="button"
+            name="whatToWatch"
+            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            Code
+          </button>
+        </div>
+      </div>
+      <div
+        class="my-3 lg:flex-1 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] flex-shrink-0 flex-grow-0 w-full"
+      >
+        <div
+          class="relative overflow-hidden bg-cover bg-no-repeat"
+          data-te-ripple-init
+          data-te-ripple-color="light"
+        >
+          <img
+            class="rounded-t-lg h-48 object-cover w-full"
+            src="https://imgtr.ee/images/2023/06/13/QBcfL.png"
+            alt=""
+          />
+          <a href="#!">
+            <div
+              class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-[hsla(0,0%,98%,0.15)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100"
+            ></div>
+          </a>
+        </div>
+        <div class="p-6">
+          <h5
+            class="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50"
+          >
+            Workout Tracker
+          </h5>
+          <p class="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+            Java for Android
+          </p>
+          <button
+            type="button"
+            name="workoutTracker"
+            class="inline-block rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal shadow-[0_4px_9px_-4px_#3b71ca] transition duration-150 ease-in-out hover:bg-primary-600 hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:bg-primary-600 focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] focus:outline-none focus:ring-0 active:bg-primary-700 active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.3),0_4px_18px_0_rgba(59,113,202,0.2)] dark:shadow-[0_4px_9px_-4px_rgba(59,113,202,0.5)] dark:hover:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:focus:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)] dark:active:shadow-[0_8px_9px_-4px_rgba(59,113,202,0.2),0_4px_18px_0_rgba(59,113,202,0.1)]"
+            data-te-ripple-init
+            data-te-ripple-color="light"
+          >
+            Code
+          </button>
+        </div>
+      </div>
+    </div>
+    <h3
+      class="mt-10 md:ml-40 md:pl-7 px-7 py-3 text-2xl sm:text-4xl text-[#ccd6f6] pt-10 underline underline-offset-5 decoration-violet-500"
+      id="aboutSection"
+    >
+      About
+    </h3>
+    <p
+      class="text-[#8892b0] max-w-[700px] md:ml-40 md:border-l-2 border-violet-500 px-7 mb-10"
+    >
+      I am an ambitious and dedicated web developer fueled by passion and a<br />
+      strong drive for continuous improvement. I thrive both in collaborative<br />
+      team environments and when working independently, consistently
+      delivering<br />
+      outstanding results.
+    </p>
+    <h3
+      class="md:ml-40 md:pl-7 px-7 text-2xl sm:text-4xl text-[#ccd6f6] pt-10 underline underline-offset-5 decoration-violet-500"
+      id="contactSection"
+    >
+      Contact
+    </h3>
+    <div class="inline md:border-l-2 border-violet-500 px-4 md:ml-40"></div>
+    <button
+      class="text-indigo-100 hover:text-white border-violet-500 rounded-sm py-3 px-2 my-4 mb-20 bg-gradient-to-br from-purple-500 via-indigo-500 to-indigo-500"
+    >
+      E-Mail Me &#128231;
+    </button>
+    <!-- Footer -->
+    <footer class="bg-black text-center">
+      <div class="p-2 text-center text-[#8892b0]">
+        ©
+        <a class="text-[#8892b0]" href="https://www.yarinkeren.com/"
+          >Yarin Keren | Web Developer</a
+        >
+      </div>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+</html>
