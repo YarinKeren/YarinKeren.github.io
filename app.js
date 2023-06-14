@@ -2,14 +2,9 @@ const button = document.querySelector("#nav-button"); // Hamburger Icon
 const menu = document.querySelector("#navbar-sticky"); // Menu
 // Get all the buttons in the cards
 const buttons = document.querySelectorAll("button[name]");
-const mailBtn = document.querySelector("#mailBtn");
 
 button.addEventListener("click", () => {
   menu.classList.toggle("hidden");
-});
-
-mailBtn.addEventListener("click", () => {
-  window.open("mailto:jarin4378@gmail.com");
 });
 
 // Add click event listener to each button
